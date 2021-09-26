@@ -1,0 +1,35 @@
+.Online-Streaming {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.Online-Streaming .right {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Online-Streaming .right img {
+  width: 100%;
+  height: auto;
+  max-width: auto;
+  max-height: auto;
+}
+
+.Online-Streaming .left > * {
+  margin: 16px 0;
+}
+/*# sourceMappingURL=style.css.map */

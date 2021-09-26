@@ -1,0 +1,29 @@
+@mixin dimension($width ,$height , $maxW , $maxH)
+    width: $width
+    height: $height
+    max-width: $maxW
+    max-height: $maxH
+
+@mixin flex-mixin($type , $wrap, $direction , $JC , $AI)
+    display: $type
+    flex-direction: $direction
+    flex-wrap: $wrap
+    justify-content: $JC
+    align-items: $AI
+
+@mixin positionElem($position , $top , $right , $bottom , $left)
+    position: $position
+    top: $top
+    right: $right
+    bottom:  $bottom
+    left: $left
+
+@mixin textStyle($transform , $decoration )
+    text-transform: $transform
+    text-decoration: $decoration
+
+@mixin imgBG($url , $position ,$repeat , $size )
+    background-image: $url
+    background-position: $position
+    background-repeat: $repeat
+    background-size: $size

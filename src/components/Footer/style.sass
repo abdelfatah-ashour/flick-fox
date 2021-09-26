@@ -1,0 +1,23 @@
+@import ../../assets/css/variables
+@import ../../assets/css/mixin
+
+footer
+    @include imgBG($url :url("../../assets/images/section-bg.jpg") , $position :center center ,$repeat :no-repeat , $size :cover )
+    color: $second-color
+    nav,
+    ul
+        height: 100px
+    ul
+        li
+            a
+                color: $second-color
+                cursor: pointer
+                &:hover
+                    color: $first-color
+    nav
+        div
+            cursor: pointer
+    .brand
+        color: $first-color
+        font-weight: 700
+        font-size: 20px

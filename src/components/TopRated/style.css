@@ -1,0 +1,27 @@
+.Top-Rated {
+  width: 100%;
+  min-height: 100vh;
+  padding: 90px 0;
+  background-image: url("../../assets/images/section-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Top-Rated .head {
+  width: 100%;
+  height: 300px;
+  color: #fff;
+}
+
+.Top-Rated .head h6 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #E8DC22;
+}
+
+.Top-Rated .head h3 {
+  font-weight: 700;
+  font-size: 40px;
+}
+/*# sourceMappingURL=style.css.map */

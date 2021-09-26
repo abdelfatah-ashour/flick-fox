@@ -1,0 +1,32 @@
+footer {
+  background-image: url("../../assets/images/section-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+footer nav,
+footer ul {
+  height: 100px;
+}
+
+footer ul li a {
+  color: #fff;
+  cursor: pointer;
+}
+
+footer ul li a:hover {
+  color: #E8DC22;
+}
+
+footer nav div {
+  cursor: pointer;
+}
+
+footer .brand {
+  color: #E8DC22;
+  font-weight: 700;
+  font-size: 20px;
+}
+/*# sourceMappingURL=style.css.map */

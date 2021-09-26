@@ -1,0 +1,13 @@
+@import ../../assets/css/variables
+@import ../../assets/css/mixin
+.Online-Streaming
+    width: 100%
+    min-height: 100vh
+    .right
+        min-height: 100vh
+        @include flex-mixin($type : flex, $wrap: no-wrap , $direction : row, $JC :center , $AI:center )
+        img
+            @include dimension($width : 100%,$height : auto , $maxW :auto , $maxH: auto)
+    .left
+        > *
+            margin: 16px 0

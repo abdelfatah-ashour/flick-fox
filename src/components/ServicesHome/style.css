@@ -1,0 +1,21 @@
+.Services-Home {
+  height: 100vh;
+}
+
+.Services-Home .banner {
+  height: 200px;
+  background-color: #E8DC22;
+  -webkit-writing-mode: vertical-rl;
+      -ms-writing-mode: tb-rl;
+          writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-weight: 600;
+  border-radius: 4px;
+}
+
+.Services-Home .banner a {
+  color: #0B1110;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

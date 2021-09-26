@@ -1,0 +1,21 @@
+@import ./mixin.sass
+
+*,
+*::before,
+*::after
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+
+html
+    scroll-behavior: smooth
+
+body
+    font-family: Arial, Helvetica, sans-serif
+
+.overlay
+    @include positionElem($position : absolute, $top : 0 , $right : 0, $bottom : 0 , $left:0 )
+    height: 125vh
+    background-color: rgba(#000 , .5)
+    z-index: 1
+    

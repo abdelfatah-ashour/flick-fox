@@ -1,0 +1,24 @@
+.Top-Section {
+  height: 250px;
+  color: inherit;
+}
+
+.Top-Section > * {
+  margin: 12px 0;
+}
+
+.Top-Section span {
+  font-weight: 600;
+  color: #E8DC22;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.Top-Section h2 {
+  color: inherit;
+  font-size: 40px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

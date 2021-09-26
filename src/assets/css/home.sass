@@ -1,0 +1,183 @@
+@import variables.sass
+@import mixin.sass
+
+header
+    @include dimension($width : 100%,$height :125vh , $maxW :auto , $maxH:auto )
+    @include imgBG($url : url("../images/banner_bg01.jpg"), $position :center ,$repeat : no-repeat , $size : cover)
+    transition: all .5s ease-in-out
+    object-fit: cover
+.navbar
+    min-height: 75px
+    z-index: 10
+    .navbar-brand
+        height: 40px
+        width: 110px
+        img
+            width: 40px
+            margin-right: 8px
+        a
+            @include textStyle($transform :uppercase , $decoration : none )
+            color: $second-color
+            font-weight: 700
+            &:hover
+                color: $first-color
+    .navbar-nav .nav-item .nav-link
+        @include textStyle($transform : uppercase, $decoration : none )
+        font-weight: 600
+        color: $second-color
+        &:hover
+            color: #E8DC22 !important
+    .navbar-nav .nav-item .active
+        color: #E8DC22 !important
+    .box-search
+        color: $first-color
+        cursor: pointer
+        font-size: 30px
+        font-weight: 700
+.navbar-toggler
+    color: $first-color
+    font-weight: 900
+    font-size: 30px
+    border: 0 !important
+    outline: 0 !important
+    &:focus
+        box-shadow: none !important
+        border: 0 !important
+        outline: 0 !important
+.content-header
+    @include positionElem($position : absolute, $top : 50% , $right :none , $bottom : none, $left: 0)
+    transform: translateY(-25%)
+    color: #fff
+    z-index: 2
+    margin-left: 64px
+    h3
+        @include textStyle($transform : uppercase , $decoration :none )
+        font-weight: 700
+        font-size: 28px
+        color: $first-color
+    h2
+        @include textStyle($transform : capitalize , $decoration :none )
+        font-size: 60px;
+        line-height: 1.2;
+        font-weight: 700
+    .details-content
+        span
+            margin: 0 4px
+            font-size: 12px
+            padding: 4px
+            font-weight: 600
+            .icon
+                color: $first-color
+                font-size: 12px
+                font-weight: 700
+            &:nth-of-type(1)
+                @include textStyle($transform : uppercase , $decoration :none )
+                background-color: #fff
+                color: #000
+            &:nth-of-type(2)
+                @include textStyle($transform : uppercase , $decoration :none )
+                border: 2px solid $second-color
+                background-color: $first-bg-color
+                padding: 2px 8px
+    a
+        padding: 12px 24px
+        margin-top: 32px
+        margin-left: 0
+        font-size: 14px
+        font-weight: 600
+        border: 2px solid $first-color
+        border-radius: 50px
+        color: $second-color
+        @include textStyle($transform : uppercase, $decoration : none)
+        &:hover
+            background-color: $first-color
+            color: $second-bg-color
+
+.group-search
+    @include positionElem($position : fixed, $top :0 , $right :0 , $bottom :0 , $left:0 )
+    @include dimension($width :100% ,$height :100vh , $maxW :auto , $maxH:auto )
+    z-index: 99
+    background-color: rgba(#000 , .95)
+    .control-search
+        @include dimension($width :50% ,$height :70px , $maxW :auto , $maxH:auto )
+        input
+            @include dimension($width :100% ,$height :100% , $maxW :auto , $maxH:auto )
+            @include textStyle($transform :capitalize , $decoration :none )
+            color: $second-color
+            background-color: $first-bg-color
+            border: 0
+            outline: 0
+            padding: 8px
+            border-bottom: 2px solid $third-color
+            font-size: 30px
+    .close
+        @include positionElem($position : absolute, $top :64px , $right :64px , $bottom : none , $left: none )
+        color: $first-color
+        font-weight: 700
+        font-size: 30px
+        &:focus
+            border-color: $first-color
+            outline-color: $first-color
+            box-shadow: none
+
+.upcoming-movies
+    width: 100%
+    background-color: $first-bg-color
+    padding: 125px 0
+    @include imgBG($url : url("../images/section-bg.jpg"), $position : center ,$repeat : no-repeat , $size : cover)
+    .heading
+        color: $second-color
+        h6
+            font-weight: 600
+            color: $first-color
+            font-size: 12px
+.list-categories
+    li
+        @include textStyle($transform : capitalize, $decoration : none )
+        cursor: pointer
+        color: $second-color
+        margin-right: 32px
+        padding: 8px 16px
+        border-radius: 50px
+        font-size: 12px
+        font-weight: 600
+        background-color: $second-bg-color
+        border: 2px solid $third-bg-color
+    .active-tab
+        border-color: $first-color
+
+
+.News-Latter
+    @include imgBG($url :url("../images/newsletter_bg.jpg") , $position :center ,$repeat :no-repeat , $size :cover )
+    color: $second-bg-color
+    .left,
+    .get-started
+        height: 200px
+
+.slider
+    .slide
+        height: 470px
+        color: $second-color
+
+.fixed
+    @include positionElem(fixed , 0 , 0 ,none, 0 )
+    background-color: $second-bg-color
+
+.sticky
+    @include positionElem(block , 0 , 0 ,none, 0 )
+
+@media (max-width : 576px)
+    .navbar
+        background-color: $first-bg-color
+    .card
+        width: 45% !important
+@media (min-width : 576.5px) and (max-width : 768px)
+    .navbar
+        background-color: $first-bg-color
+    .card
+        width: 45% !important
+@media (min-width : 768.5px) and (max-width : 991px)
+    .navbar
+        background-color: $first-bg-color
+    .card
+        width: 32% !important
