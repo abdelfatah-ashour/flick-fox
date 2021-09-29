@@ -1,0 +1,20 @@
+.upcoming-movies {
+  width: 100%;
+  color: #fff;
+  background-color: #0B1110;
+  background-image: url("../../assets/images/section-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.upcoming-movies .heading {
+  color: #fff;
+}
+
+.upcoming-movies .heading h6 {
+  font-weight: 600;
+  color: #E8DC22;
+  font-size: 12px;
+}
+/*# sourceMappingURL=style.css.map */

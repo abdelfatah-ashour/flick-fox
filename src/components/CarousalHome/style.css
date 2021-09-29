@@ -1,0 +1,16 @@
+.Slide-carousal {
+  height: 500px;
+}
+
+.Slide-carousal .image-poster {
+  width: 100%;
+  height: 75%;
+}
+
+.Slide-carousal .image-poster img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=style.css.map */

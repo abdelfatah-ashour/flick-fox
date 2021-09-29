@@ -1,0 +1,99 @@
+.navbar {
+  min-height: 75px;
+  z-index: 10;
+  background-color: #1F1E24;
+}
+
+.navbar .navbar-brand {
+  height: 40px;
+  width: 110px;
+}
+
+.navbar .navbar-brand img {
+  width: 40px;
+  margin-right: 8px;
+}
+
+.navbar .navbar-brand a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.navbar .navbar-brand a:hover {
+  color: #E8DC22;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  color: #fff;
+}
+
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: #E8DC22 !important;
+}
+
+.navbar .navbar-nav .nav-item .active {
+  color: #E8DC22 !important;
+}
+
+.navbar .box-search {
+  color: #E8DC22;
+  cursor: pointer;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.navbar-toggler {
+  color: #E8DC22;
+  font-weight: 900;
+  font-size: 30px;
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: none;
+  left: 0;
+  background-color: #1F1E24;
+}
+
+.sticky {
+  position: block;
+  top: 0;
+  right: 0;
+  bottom: none;
+  left: 0;
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    background-color: #0B1110;
+  }
+}
+
+@media (min-width: 576.5px) and (max-width: 768px) {
+  .navbar {
+    background-color: #0B1110;
+  }
+}
+
+@media (min-width: 768.5px) and (max-width: 991px) {
+  .navbar {
+    background-color: #0B1110;
+  }
+}
+/*# sourceMappingURL=style.css.map */

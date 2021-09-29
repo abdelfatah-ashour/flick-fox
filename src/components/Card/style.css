@@ -1,0 +1,34 @@
+.Card {
+  width: 24%;
+  height: 450px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.Card .Card-image {
+  width: 100%;
+  height: 75%;
+}
+
+.Card .Card-image img {
+  width: 100%;
+}
+
+@media (max-width: 576px) {
+  .Card {
+    width: 45%;
+  }
+}
+
+@media (min-width: 576.5px) and (max-width: 768px) {
+  .Card {
+    width: 45%;
+  }
+}
+
+@media (min-width: 768.5px) and (max-width: 991px) {
+  .Card {
+    width: 33%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

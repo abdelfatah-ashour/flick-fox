@@ -4,6 +4,8 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
+  -webkit-box-shadow: 0 2px 16px 2px #5c5a5a;
+          box-shadow: 0 2px 16px 2px #5c5a5a;
 }
 
 footer nav,

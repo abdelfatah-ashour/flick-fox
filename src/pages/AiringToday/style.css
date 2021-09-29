@@ -1,0 +1,37 @@
+.tv-show {
+  background-image: url("../../assets/images/section-bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  padding: 90px 0px;
+}
+
+.tv-show button {
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #1F1E24;
+}
+
+.keywords-list li {
+  padding: 4px 8px;
+  border: 2px solid #E8DC22;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.keywords-list li:hover {
+  background-color: #E8DC22;
+  color: #1F1E24;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+}
+
+.keywords-list .active-keyowrd {
+  background-color: #E8DC22;
+  color: #1F1E24;
+}
+/*# sourceMappingURL=style.css.map */

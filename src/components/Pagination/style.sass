@@ -1,0 +1,16 @@
+@import ../../assets/css/variables
+@import ../../assets/css/mixin
+
+.pagination
+    width: 100%
+    padding: 4px
+    @include flex-mixin($type : flex, $wrap: no-wrap , $direction : row, $JC : center, $AI: center )
+    li
+        border: 2px solid $first-color
+        margin: 0 4px
+        padding: 4px 8px
+        border-radius: 4px
+    .active
+        background-color: $first-color
+        color : $first-bg-color
+            

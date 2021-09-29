@@ -1,0 +1,64 @@
+@import ../../assets/css/variables
+@import ../../assets/css/mixin
+
+.navbar
+    min-height: 75px
+    z-index: 10
+    background-color: $second-bg-color
+    .navbar-brand
+        height: 40px
+        width: 110px
+        img
+            width: 40px
+            margin-right: 8px
+        a
+            @include textStyle($transform :uppercase , $decoration : none )
+            color: $second-color
+            font-weight: 700
+            &:hover
+                color: $first-color
+    .navbar-nav .nav-item .nav-link
+        @include textStyle($transform : uppercase, $decoration : none )
+        font-weight: 600
+        color: $second-color
+        &:hover
+            color: #E8DC22 !important
+    .navbar-nav .nav-item .active
+        color: #E8DC22 !important
+    .box-search
+        color: $first-color
+        cursor: pointer
+        font-size: 30px
+        font-weight: 700
+
+.navbar-toggler
+    color: $first-color
+    font-weight: 900
+    font-size: 30px
+    border: 0 !important
+    outline: 0 !important
+    &:focus
+        box-shadow: none !important
+        border: 0 !important
+        outline: 0 !important
+
+
+.fixed
+    @include positionElem(fixed , 0 , 0 ,none, 0 )
+    background-color: $second-bg-color
+
+.sticky
+    @include positionElem(block , 0 , 0 ,none, 0 )
+
+
+@media (max-width : 576px)
+    .navbar
+        background-color: $first-bg-color
+
+@media (min-width : 576.5px) and (max-width : 768px)
+    .navbar
+        background-color: $first-bg-color
+
+@media (min-width : 768.5px) and (max-width : 991px)
+    .navbar
+        background-color: $first-bg-color

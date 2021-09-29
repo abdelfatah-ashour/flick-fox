@@ -9,10 +9,8 @@ export default function Index() {
       <div className="container h-100">
         <div className="row">
           <div className="col-md-6 col-12 d-flex flex-column justify-content-center align-items-start left">
-            <div>
-              <span>line</span>
-              <span>online streaming</span>
-            </div>
+            <span>line</span>
+            <span>online streaming</span>
             <div>
               <h3>
                 Live Movie & TV Shows For
@@ -36,8 +34,7 @@ export default function Index() {
               href="https://www.youtube.com/watch?v=R2gbPxeNk2E"
               aria-label="watch promo movie in youtube"
               target="_blank"
-              rel="noreferrer"
-            >
+              rel="noreferrer">
               <BsFillPlayFill /> watch now
             </a>
           </div>

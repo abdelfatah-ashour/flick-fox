@@ -1,0 +1,28 @@
+@import ../../assets/css/variables
+@import ../../assets/css/mixin
+
+.tv-show
+    @include imgBG($url : url("../../assets/images/section-bg.jpg") , $position : center ,$repeat : no-repeat, $size : cover )
+    color: $second-color
+    padding: 90px 0px
+    button
+        font-size: 16px
+        font-weight: 700
+        cursor: pointer
+        color: $second-bg-color
+
+.keywords-list
+    li
+        padding: 4px 8px
+        border: 2px solid $first-color
+        border-radius: 4px
+        font-size: 12px
+        font-weight: 600
+        cursor: pointer
+        &:hover
+            background-color: $first-color
+            color : $second-bg-color
+            transition : all .2s ease-in-out
+    .active-keyowrd
+        background-color: $first-color
+        color : $second-bg-color
