@@ -98,7 +98,7 @@ export default function Index() {
                           <li>
                             <Link
                               className="dropdown-item text-uppercase"
-                              to={"/tv-show" + subMenu.link}>
+                              to={item.pathname + subMenu.link}>
                               {subMenu.label}
                             </Link>
                           </li>

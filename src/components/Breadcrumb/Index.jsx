@@ -3,7 +3,7 @@ import propTypes from "prop-types";
 import { Link } from "react-router-dom";
 import "./style.css";
 
-export default function Index({ h2, links }) {
+export default function Index({ h2, target }) {
   return (
     <div className="Breadcrumb">
       <h2>{h2}</h2>
@@ -12,7 +12,7 @@ export default function Index({ h2, links }) {
           <li>
             <Link to="/">home </Link>
           </li>
-          <li key={links.id}>{" / " + links.target}</li>
+          <li>{" / " + target}</li>
         </ol>
       </nav>
     </div>
@@ -21,5 +21,5 @@ export default function Index({ h2, links }) {
 
 Index.prototype = {
   h2: propTypes.string,
-  links: propTypes.array,
+  target: propTypes.array,
 };

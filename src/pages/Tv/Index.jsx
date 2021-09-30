@@ -1,22 +1,22 @@
 import React, { useState } from "react";
 import { SEO } from "../../components/SEO/Index";
 import { useFetch } from "../../hooks/useFetch.js";
-import { getGeneres } from "../../utility/getGeneres";
+import { getTvGenres } from "../../utility/getTvGenres";
 import { GroupCardsProps } from "../../utility/groupCardsProps";
 import Breadcrumb from "../../components/Breadcrumb/Index";
 import GroupCards from "../../components/GroupCards/Index";
 import "./style.css";
 
 export default function Index() {
-  const [genre, setGenre] = useState(28);
+  const [genre, setGenre] = useState(10759);
   const [page, setPage] = useState(1);
 
   const { isLoading, data, error } = useFetch(
     "GET",
-    `/discover/movie?api_key=${process.env.REACT_APP_API_KEY}&page=${page}&with_genres=${genre}`
+    `/discover/tv?api_key=${process.env.REACT_APP_API_KEY}&page=${page}&with_genres=${genre}`
   );
 
-  const genres = getGeneres();
+  const genres = getTvGenres();
 
   const handleCountPage = (num) => {
     setPage(num.selected + 1);
@@ -36,9 +36,9 @@ export default function Index() {
 
   return (
     <>
-      <SEO title="Movies" description="hello world" />
-      <Breadcrumb h2="discover movies" target="movies" />
-      <div className="Movie">
+      <SEO title="TV" description="hello world" />
+      <Breadcrumb h2="discover TV" target="TV" />
+      <div className="TV">
         <main className="container">
           <section className="d-flex justify-content-around">
             <ul className="list-genres list-unstyled">

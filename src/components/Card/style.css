@@ -14,6 +14,11 @@
   width: 100%;
 }
 
+.Card .Card-info span {
+  font-size: 12px;
+  font-weight: 600;
+}
+
 @media (max-width: 576px) {
   .Card {
     width: 45%;

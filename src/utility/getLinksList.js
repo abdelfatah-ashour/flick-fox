@@ -7,10 +7,43 @@ export function getLinksList() {
       sunMenu: null,
     },
     {
+      id: "c120ds45as",
+      pathname: "/discover",
+      label: "discover",
+      sunMenu: [
+        {
+          id: "sd54ew78v",
+          label: "tv",
+          link: "/tv",
+        },
+        {
+          id: "cv54sdsd01",
+          label: "movies",
+          link: "/movies",
+        },
+      ],
+    },
+    {
       id: "zxvcar54",
-      pathname: "/movie",
-      label: "movie",
-      sunMenu: null,
+      pathname: "/movies",
+      label: "movies",
+      sunMenu: [
+        {
+          id: "321dfa54",
+          label: "top rated",
+          link: "/top-rated",
+        },
+        {
+          id: "nhsr21asd",
+          label: "most popular",
+          link: "/most-popular",
+        },
+        {
+          id: "zxcfer12",
+          label: "upcoming",
+          link: "/upcoming",
+        },
+      ],
     },
     {
       id: "321qwe21",

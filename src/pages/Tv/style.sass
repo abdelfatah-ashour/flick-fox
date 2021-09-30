@@ -1,0 +1,24 @@
+@import ../../assets/css/variables
+@import ../../assets/css/mixin
+
+.TV
+    min-height: 100vh
+    width: 100%
+    @include imgBG($url : url("../../assets/images/section-bg.jpg"), $position : center ,$repeat : repeat , $size : cover )
+    color: $second-color
+
+    .list-genres
+        @include flex-mixin($type : flex , $wrap: wrap , $direction : row , $JC : center , $AI: center )
+        padding: 90px 50px
+        .active
+            background-color: $first-color
+            color: $second-bg-color
+        li
+            margin: 8px 16px
+            border: 2px solid $first-color
+            padding: 4px 8px
+            border-radius: 4px
+            cursor: pointer
+            font-size: 12px
+            font-weight: 600
+          

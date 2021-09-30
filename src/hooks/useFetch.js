@@ -14,12 +14,14 @@ export function useFetch(method, url) {
         method,
         url,
       })
-        .then(({ data }) => {
+        .then((response) => {
+          console.log("response ", response);
           setIsLoading(false);
-          setData(data);
+          setData(response.data);
           setError(false);
         })
-        .catch(() => {
+        .catch((error) => {
+          console.log(error);
           setIsLoading(false);
           setData([]);
           setError(true);

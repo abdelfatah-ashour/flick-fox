@@ -24,7 +24,7 @@ export default function Index(props) {
           loading="lazy"
         />
       </div>
-      <div className="w-100 p-2 d-flex flex-column justify-content-start align-items-start h-25">
+      <div className="Card-info w-100 p-2 d-flex flex-column justify-content-start align-items-start h-25">
         <div className="d-flex justify-content-between w-100 mb-3">
           <span>{original_title || name}</span>
           <span>

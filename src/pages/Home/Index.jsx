@@ -1,5 +1,5 @@
 import React from "react";
-import { SEO } from "../../utility/SEO";
+import { SEO } from "../../components/SEO/Index";
 import Services from "../../components/ServicesHome/Index";
 import TopRated from "../../components/TopRated/Index";
 import OnlineStreaming from "../../components/OnlineStreaming/Index";
