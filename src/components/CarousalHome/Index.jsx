@@ -12,6 +12,7 @@ export default function Index({ items }) {
     centerPadding: "60px",
     slidesToShow: 4,
     swipeToSlide: true,
+    dots: false,
     responsive: [
       {
         breakpoint: 991,

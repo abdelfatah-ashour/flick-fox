@@ -1,0 +1,54 @@
+.Pricing {
+  min-height: 125vh;
+  color: #fff;
+  background-image: url("../../assets/images/section-bg.jpg");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.Pricing .group-plan .card-plan {
+  height: 500px;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.Pricing .group-plan .card-plan:hover, .Pricing .group-plan .card-plan:nth-of-type(2) {
+  border-color: #E8DC22;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.Pricing .group-plan .card-plan .head {
+  background-color: #E8DC22;
+  color: #1F1E24;
+  border-radius: 8px;
+  -webkit-box-shadow: inset 0 0 4px 0px #807d06;
+          box-shadow: inset 0 0 4px 0px #807d06;
+}
+
+.Pricing .group-plan .card-plan .head h5,
+.Pricing .group-plan .card-plan .head h6 {
+  font-weight: 900;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+.Pricing .group-plan .card-plan .head h6 {
+  font-size: 22px;
+}
+
+.Pricing .group-plan .card-plan .btn-buy {
+  border: 2px solid #E8DC22;
+  outline: 0;
+  padding: 8px 40px;
+  border-radius: 40px;
+  background-color: transparent;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+/*# sourceMappingURL=style.css.map */

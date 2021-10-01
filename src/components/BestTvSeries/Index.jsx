@@ -25,7 +25,7 @@ export default function Index() {
           {!isLoading &&
             !error &&
             data &&
-            data?.results.slice(0, 12).map((item) => {
+            data?.results.map((item) => {
               return <Card key={item.id} item={item} />;
             })}
           <Pagination

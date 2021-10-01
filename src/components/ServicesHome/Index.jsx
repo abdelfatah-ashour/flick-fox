@@ -1,5 +1,8 @@
 import React from "react";
 import { BsDownload } from "react-icons/bs";
+import { BiCameraMovie } from "react-icons/bi";
+import { GrDevice } from "react-icons/gr";
+import TitleSection from "../TitleSection/Index";
 import "./style.css";
 
 export default function Index() {
@@ -26,12 +29,9 @@ export default function Index() {
             </div>
           </div>
           {/* start right section */}
-          <div className="col-md-6 col-12 h-100">
+          <div className="right-side col-md-6 col-12 h-100">
             <div className="d-flex flex-column justify-content-around h-100 p-3">
-              <div className="title">
-                <span>line</span>
-                <span>our services</span>
-              </div>
+              <TitleSection title="OUR SERVICES" />
               <div className="content">
                 <h3>Download Your Shows Watch Offline.</h3>
                 <p>
@@ -41,8 +41,10 @@ export default function Index() {
                   some injected humour.
                 </p>
               </div>
-              <div className="row">
-                <div className="col-3">img</div>
+              <div className="row px-4">
+                <div className="icon-media col-3">
+                  <GrDevice />
+                </div>
                 <div className="col-9 d-flex flex-column">
                   <h4>Enjoy on Your TV.</h4>
                   <p>
@@ -51,8 +53,10 @@ export default function Index() {
                   </p>
                 </div>
               </div>
-              <div className="row">
-                <div className="col-3">img</div>
+              <div className="row px-4">
+                <div className="icon-media col-3">
+                  <BiCameraMovie />
+                </div>
                 <div className="col-9 d-flex flex-column">
                   <h4>Watch Everywhere.</h4>
                   <p>

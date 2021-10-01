@@ -68,17 +68,5 @@ export function getLinksList() {
       label: "price",
       sunMenu: null,
     },
-    {
-      id: "21weq4r",
-      pathname: "/blog",
-      label: "blog",
-      sunMenu: null,
-    },
-    {
-      id: "zaserqg1",
-      pathname: "/contacts",
-      label: "contacts",
-      sunMenu: null,
-    },
   ];
 }

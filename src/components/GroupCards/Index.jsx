@@ -12,7 +12,7 @@ export default function Index({
 }) {
   return (
     <>
-      <section className="row">
+      <section className="row d-flex justify-content-evenly">
         {!isLoading &&
           !error &&
           data &&

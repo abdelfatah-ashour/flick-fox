@@ -15,13 +15,11 @@ export function useFetch(method, url) {
         url,
       })
         .then((response) => {
-          console.log("response ", response);
           setIsLoading(false);
           setData(response.data);
           setError(false);
         })
-        .catch((error) => {
-          console.log(error);
+        .catch(() => {
           setIsLoading(false);
           setData([]);
           setError(true);

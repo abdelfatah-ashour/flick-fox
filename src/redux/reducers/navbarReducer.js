@@ -1,33 +1,45 @@
-import { FIXED, BLOCK, OPEN_SEARCH, CLOSE_SEARCH } from "../types";
+import { FIXED, BLOCK, OPEN_SEARCH, CHANGE_TEXT, CLOSE_SEARCH } from "../types";
 
 const initNavFix = false;
 
-const initNavSearch = false;
+const initNavSearch = {
+  status: false,
+  type: "",
+  text: "",
+};
 
-function navbarFixedReducer(state = initNavFix, action) {
+export function navbarFixedReducer(state = initNavFix, action) {
   switch (action.type) {
     case FIXED: {
       return action.payload;
     }
+
     case BLOCK: {
       return action.payload;
     }
+
     default:
       return state;
   }
 }
 
-function navbarSearchReducer(state = initNavSearch, action) {
+export function navbarSearchReducer(state = initNavSearch, action) {
   switch (action.type) {
     case OPEN_SEARCH: {
-      return action.payload;
+      return { ...state, status: action.payload };
+    }
+    case CHANGE_TEXT: {
+      return { ...state, type: action.payload.type, text: action.payload.text };
     }
     case CLOSE_SEARCH: {
-      return action.payload;
+      return {
+        ...state,
+        status: action.payload,
+        type: action.payload.type,
+        text: action.payload.text,
+      };
     }
     default:
       return state;
   }
 }
-
-export { navbarFixedReducer, navbarSearchReducer };

@@ -7,7 +7,7 @@ import BestTvSeries from "../../components/BestTvSeries/Index";
 import Upcoming from "../../components/Upcoming/Index";
 import Header from "../../components/HeaderHome/Index";
 import NewsLetter from "../../components/NewsLatter/Index";
-import "../../assets/css/home.css";
+import "./style.css";
 
 export default function Index() {
   return (

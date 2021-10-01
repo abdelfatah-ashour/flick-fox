@@ -1,0 +1,18 @@
+@import ../../assets/css/variables
+@import ../../assets/css/mixin
+
+.title
+    @include flex-mixin($type : flex , $wrap: nowrap ,  $direction : row  ,  $JC : flex-start , $AI: center )   
+    span
+        position: relative
+        &:nth-of-type(1)
+            width: 60px
+            margin-right: 16px
+            &::after
+                content: ""
+                @include positionElem($position : absolute, $top : 50% , $right : 50% , $bottom : inherit , $left: 0 )
+                height: 4px
+                width: inherit
+                padding: 2px
+                background-color: $first-color
+                transform: translate(0%, -50%)

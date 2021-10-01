@@ -1,5 +1,5 @@
 .Services-Home {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .Services-Home .banner {
@@ -17,5 +17,47 @@
   color: #0B1110;
   text-transform: uppercase;
   text-decoration: none;
+}
+
+.Services-Home .right-side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Services-Home .right-side .icon-media {
+  font-weight: 900;
+  font-size: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px dashed #E8DC22;
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
 }
 /*# sourceMappingURL=style.css.map */
