@@ -13,6 +13,7 @@ export default function Index({ count, handlePageClick }) {
       onPageChange={handlePageClick}
       containerClassName={"pagination"}
       activeClassName={"active"}
+      activeLinkClassName={"active"}
     />
   );
 }

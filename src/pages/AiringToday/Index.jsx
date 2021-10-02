@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import { SEO } from "../../components/SEO/Index";
 import { useFetch } from "../../hooks/useFetch";
+import { GroupCardsProps } from "../../utility/groupCardsProps";
 import Breadcrumb from "../../components/Breadcrumb/Index";
 import TopSection from "../../components/TopSection/Index";
 import GroupCards from "../../components/GroupCards/Index";
-import { GroupCardsProps } from "../../utility/groupCardsProps";
 import "./style.css";
 
 export default function Index() {
@@ -16,7 +16,6 @@ export default function Index() {
   );
 
   const handleCountPage = (num) => {
-    console.log("num selected ", num);
     setPage(num.selected + 1);
   };
 

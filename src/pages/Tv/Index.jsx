@@ -37,7 +37,7 @@ export default function Index() {
   return (
     <>
       <SEO title="TV" description="hello world" />
-      <Breadcrumb h2="discover TV" target="TV" />
+      <Breadcrumb h2="Discover TV" target="TV" />
       <div className="TV">
         <main className="container">
           <section className="d-flex justify-content-around">

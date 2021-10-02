@@ -1,0 +1,54 @@
+.spinner {
+  width: 100%;
+  height: 100vh;
+}
+
+.sp-vortex {
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.sp-vortex:after,
+.sp-vortex:before {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  -webkit-animation: spVortex 2s infinite linear;
+  animation: spVortex 2s infinite linear;
+}
+
+.sp-vortex:before {
+  border-top: 6px #000 solid;
+  top: -3px;
+  left: calc(-50% - 3px);
+  transform-origin: right center;
+}
+
+.sp-vortex:after {
+  border-bottom: 6px #000 solid;
+  top: 3px;
+  right: calc(-50% - 3px);
+  transform-origin: left center;
+}
+
+@-webkit-keyframes spVortex {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@keyframes spVortex {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

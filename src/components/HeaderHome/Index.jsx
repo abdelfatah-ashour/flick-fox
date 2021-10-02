@@ -1,6 +1,5 @@
 import React from "react";
 import { AiFillClockCircle, AiOutlineCalendar } from "react-icons/ai";
-import { BsFillPlayFill } from "react-icons/bs";
 import WatchNowBtn from "../WatchNowBtn/Index";
 import "./style.css";
 

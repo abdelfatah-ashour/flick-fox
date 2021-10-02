@@ -2,6 +2,8 @@
 @import ../../assets/css/mixin.sass
 .Services-Home
     min-height: 100vh
+    .left-side
+        height: 100vh
     .banner
         height: 200px
         background-color: $first-color
@@ -13,7 +15,7 @@
             color: $first-bg-color
             @include textStyle($transform : uppercase, $decoration : none)
     .right-side
-        @include flex-mixin($type : flex , $wrap: nowrap , $direction : row , $JC : center , $AI: center )
+        height: 100vh        
         .icon-media
             font-weight: 900
             font-size: 50px

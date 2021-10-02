@@ -38,7 +38,7 @@ export default function Index() {
   return (
     <nav
       className={
-        navbar_fixed
+        navbar_fixed.status
           ? "fixed navbar navbar-expand-lg w-100"
           : "sticky navbar navbar-expand-lg w-100"
       }

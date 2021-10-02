@@ -1,9 +1,12 @@
 import React, { lazy, Suspense } from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { useSelector } from "react-redux";
 import Spinner from "./components/Spinner/Index";
 import Navbar from "./components/Navbar/Index";
 import Footer from "./components/Footer/Index";
-import Search from "./components/Search/Index";
+import SearchNav from "./components/Search/Index";
+import PageNotFound from "./pages/PageNotFound/Index";
+
 const Home = lazy(() => import("./pages/Home/Index"));
 const AiringToday = lazy(() => import("./pages/AiringToday/Index"));
 const OnTheAir = lazy(() => import("./pages/OnTheAir/Index"));
@@ -14,12 +17,15 @@ const Upcoming = lazy(() => import("./pages/Upcoming/Index"));
 const Movies = lazy(() => import("./pages/Movie/Index"));
 const TV = lazy(() => import("./pages/Tv/Index"));
 const Price = lazy(() => import("./pages/Price/Index"));
+const SearchPage = lazy(() => import("./pages/Search/Index"));
 
 export default function App() {
+  const { valueOfSearch } = useSelector((state) => state);
+
   return (
     <BrowserRouter>
       <Navbar />
-      <Search />
+      <SearchNav />
       <Switch>
         <Route path="/discover/tv">
           <Suspense fallback={<Spinner />}>
@@ -63,6 +69,12 @@ export default function App() {
           </Suspense>
         </Route>
 
+        <Route path="/search">
+          <Suspense fallback={<Spinner />}>
+            {!valueOfSearch ? <Redirect to="/" /> : <SearchPage />}
+          </Suspense>
+        </Route>
+
         <Route path="/price">
           <Suspense fallback={<Spinner />}>
             <Price />
@@ -90,8 +102,4 @@ export default function App() {
       <Footer />
     </BrowserRouter>
   );
-}
-
-function PageNotFound() {
-  return <h1>404 | page not found</h1>;
 }

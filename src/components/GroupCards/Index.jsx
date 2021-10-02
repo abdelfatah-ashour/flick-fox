@@ -2,6 +2,7 @@ import React from "react";
 import propTypes from "prop-types";
 import Pagination from "../../components/Pagination/Index";
 import Card from "../../components/Card/Index";
+import Loading from "../IsLoading/Index";
 
 export default function Index({
   isLoading,
@@ -12,6 +13,7 @@ export default function Index({
 }) {
   return (
     <>
+      {isLoading && <Loading />}
       <section className="row d-flex justify-content-evenly">
         {!isLoading &&
           !error &&

@@ -8,6 +8,14 @@
     background-color: rgba(#000 , .95)
     .control-search
         @include dimension($width :50% ,$height :70px , $maxW :auto , $maxH:auto )
+        @include flex-mixin($type : flex , $wrap: nowrap , $direction : row , $JC : center , $AI: center )
+        position: relative
+        .icon-search
+            @include positionElem($position : absolute , $top : 50% , $right : 10px , $bottom : auto , $left: auto )
+            color: $first-color
+            transform: translate( 0 , -60%)
+            font-size: 40px
+            font-weight: 900
         input
             @include dimension($width :100% ,$height :100% , $maxW :auto , $maxH:auto )
             @include textStyle($transform :capitalize , $decoration :none )
@@ -18,6 +26,11 @@
             padding: 8px
             border-bottom: 2px solid $third-color
             font-size: 30px
+            &:active,
+            &:focus
+                ~ .icon-search
+                    display: none
+                
     .close
         @include positionElem($position : absolute, $top :64px , $right :64px , $bottom : none , $left: none )
         color: $first-color

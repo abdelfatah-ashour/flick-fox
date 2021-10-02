@@ -1,22 +1,45 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { useDispatch, useSelector } from "react-redux";
 import { navbarSearchAction } from "../../redux/actions/navbarAction";
-import { CLOSE_SEARCH } from "../../redux/types";
+import { AiOutlineSearch } from "react-icons/ai";
+import {
+  CHNAGE_VALUE_SEARCH,
+  CLOSE_SEARCH,
+  RESET_VALUE_SEARCH,
+} from "../../redux/types";
+import { valueOfSearchAction } from "../../redux/actions/searchAction";
+import { useHistory } from "react-router-dom";
 import "./style.css";
 
 export default function Index() {
-  const { navbar_search } = useSelector((state) => state);
+  const { display_search } = useSelector((state) => state);
   const dispatch = useDispatch();
+  const route = useHistory();
 
-  const handleChange = (e) => {
-    if (e.target.value.trim()) {
+  const handleChange = async (e) => {
+    // store value in store redux for access it again in anywhere
+
+    if (e.keyCode === 13) {
+      if (e.target.value.trim()) {
+        dispatch(valueOfSearchAction(CHNAGE_VALUE_SEARCH, e.target.value));
+        dispatch(navbarSearchAction(CLOSE_SEARCH, false));
+        route.push("/search");
+      } else {
+        alert("input of search must be not empty!");
+      }
     }
   };
 
+  useEffect(() => {
+    return () => {
+      dispatch(valueOfSearchAction(RESET_VALUE_SEARCH, ""));
+    };
+  }, [dispatch]);
+
   return (
     <>
-      {navbar_search.status && (
+      {display_search.status && (
         <div className="group-search d-flex flex-nowrap justify-content-center align-items-center">
           <button
             className="btn close"
@@ -25,21 +48,16 @@ export default function Index() {
           </button>
           <div className="control-search">
             <input
-              list="data_search"
               type="search"
               name="search"
               id="searchId"
               placeholder="search here..."
-              onChange={handleChange}
+              onKeyUp={handleChange}
               aria-label="search  through site movie ,tv and multi"
             />
-            <datalist id="data_search">
-              <option value="Edge" />
-              <option value="Firefox" />
-              <option value="Chrome" />
-              <option value="Opera" />
-              <option value="Safari" />
-            </datalist>
+            <span className="icon-search">
+              <AiOutlineSearch />
+            </span>
           </div>
         </div>
       )}

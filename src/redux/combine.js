@@ -1,10 +1,14 @@
 import { combineReducers } from "redux";
 import { navbarFixedReducer } from "./reducers/navbarReducer";
-import { navbarSearchReducer } from "./reducers/navbarReducer";
+import {
+  displaySearchReducer,
+  valueOfSearchReducer,
+} from "./reducers/searchReducer";
 
 const rootReducer = combineReducers({
   navbar_fixed: navbarFixedReducer,
-  navbar_search: navbarSearchReducer,
+  display_search: displaySearchReducer,
+  valueOfSearch: valueOfSearchReducer,
 });
 
 export { rootReducer };
